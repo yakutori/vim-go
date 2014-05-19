@@ -52,6 +52,7 @@ endif
 
 if g:go_fmt_autosave
     autocmd BufWritePre <buffer> :GoFmt
+    autocmd BufWritePost <buffer> :GoVet
 endif
 
 if g:go_fmt_commands
